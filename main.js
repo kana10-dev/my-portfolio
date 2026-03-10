@@ -94,10 +94,10 @@
 
   // ← 表示したいテキストをここで編集できます
   const roles = [
-    'Frontend Developer',
-    'TypeScript / React',
-    'Docker & Git',
-    'UI Enthusiast',
+    'Web Developer',
+    'Figma to Code',
+    'WordPress / React',
+    'AI-Driven Developer',
   ];
 
   let roleIdx = 0;
@@ -258,5 +258,20 @@
       }
       err.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
     }
+  });
+})();
+
+/* ===========================
+   7. Lightbox
+=========================== */
+(function initLightbox() {
+  const img = document.getElementById('sushida-img');
+  const lightbox = document.getElementById('lightbox');
+  if (!img || !lightbox) return;
+
+  img.addEventListener('click', () => lightbox.classList.add('active'));
+  lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') lightbox.classList.remove('active');
   });
 })();

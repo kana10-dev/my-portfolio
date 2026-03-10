@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kana10 | Portfolio</title>
+  <meta name="description" content="kana10のポートフォリオ。Web技術を軸にAIと協力しながら開発するエンジニア。">
+  <meta property="og:title" content="kana10 | Portfolio">
+  <meta property="og:description" content="kana10のポートフォリオ。Web技術を軸にAIと協力しながら開発するエンジニア。">
+  <meta property="og:url" content="https://kana10-dev.github.io/my-portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kana10-dev.github.io/my-portfolio/img/work-1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,15 +43,13 @@
       <h2 class="section-title reveal">About Me</h2>
       <div class="about-grid">
         <div class="about-avatar reveal" style="--delay: 0.1s">
-          <!-- アバター画像があれば <img src="avatar.jpg" alt="kana10"> に差し替え -->
           <div class="avatar-placeholder">k</div>
         </div>
         <div class="about-text reveal" style="--delay: 0.2s">
           <p class="about-tagline">最新技術を、丁寧な手仕事に。</p>
           <p>
           幼少期からゲームのアドオン開発を通じて「コードで世界を構築する喜び」に没頭してきました。
-          現在はWeb技術を軸に、常に最新のツールや言語を吸収し続ける圧倒的な学習量を自負しています。
-          自身の環境を最大限に活かし、日々10時間を超える開発と学習を通じて、基礎から応用までをハイスピードで習得しています。
+          現在はWeb技術を軸に、週５０時間ペースで独学を継続しています。
           </p>
           <p>
           私の強みは、AIエージェントを高度に指揮する「開発速度」と、自らの深い理解に基づく「緻密な検証」の融合です。
@@ -56,19 +62,22 @@
               <span class="skill-tag">HTML / CSS</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">Python</span>
               <span class="skill-tag">React</span>
-              <span class="skill-tag">Docker</span>
               <span class="skill-tag">Git</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Figma</span>
             </div>
           </div>
           <div class="skills-section">
             <p class="skills-label">Learning</p>
             <div class="skills">
+              <span class="skill-tag skill-tag--learning">Python</span>
               <span class="skill-tag skill-tag--learning">C++</span>
               <span class="skill-tag skill-tag--learning">Solidity</span>
               <span class="skill-tag skill-tag--learning">Rust</span>
-              <span class="skill-tag skill-tag--learning">AI-Driven Development</span>
             </div>
           </div>
           <div class="skills-section">
@@ -84,6 +93,16 @@
       </div>
     </div>
   </section>
+
+  <!-- Sushida aside -->
+  <div class="sushida-aside reveal">
+    <img src="img/sushida.png" alt="寿司打スコア" class="sushida-aside-img" id="sushida-img">
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img src="img/sushida.png" alt="寿司打スコア" class="lightbox-img">
+  </div>
+    <p class="sushida-aside-caption">余談ですが、寿司打の1発目のスコアです。是非挑戦してください。</p>
+  </div>
 
   <!-- Works -->
   <section id="works" class="section section-alt">
@@ -121,13 +140,13 @@
           <div class="work-info">
             <h3>模写サイトまとめ</h3>
             <p>
-              自身のコーディング学習を可視化するためのポータルサイト。
+              自身のコーディング学習を可視化するためのポータルサイト。HTML/CSS, jQueryからWordPressまで、19サイト以上の模写を収録。大半はFigmaデザインカンプからのコーディング。
               <strong>※模写作品自体はAIを一切使用せず自力で実装。</strong>
               本サイトの構築にはAIを効率的に活用し、短期間での開発を実現しました。
             </p>
             <div class="work-tags">
               <span class="skill-tag">HTML / CSS</span>
-              <span class="skill-tag">Javascript</span>
+              <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">React</span>
               <span class="skill-tag">AI Co-dev</span>
             </div>
@@ -140,22 +159,61 @@
 
         <div class="work-card reveal" style="--delay: 0.2s">
           <div class="work-img">
-            <img src="img/work-3.png" alt="占いサイト">
+            <img src="img/work-4.png" alt="LP模写">
           </div>
           <div class="work-info">
-            <h3>占いサイト</h3>
+            <h3>LP模写</h3>
             <p>
-              課題として作った作品。模写を通してインプットした知識や技術を使い、
-              初めて作った自分の作品。簡単なJavascriptを用いたアウトプットが帰ってくる。
-              (怪しい)
+              ランディングページの模写。inview.jsや@keyframesを使ったアニメーションについて学んだ。
             </p>
             <div class="work-tags">
               <span class="skill-tag">HTML / CSS</span>
-              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Figma</span>
             </div>
             <div class="work-links">
-              <a href="https://kana10-dev.github.io/uranai/" class="btn-link" target="_blank">View →</a>
-              <a href="https://github.com/kana10-dev/uranai/" class="btn-link btn-link--repo" target="_blank">Repo →</a>
+              <a href="https://kana10-dev.github.io/codejump-lp" class="btn-link" target="_blank">View →</a>
+              <a href="https://github.com/kana10-dev/codejump-lp" class="btn-link btn-link--repo" target="_blank">Repo →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card reveal" style="--delay: 0.3s">
+          <div class="work-img">
+            <img src="img/work-5.png" alt="ストア(インテリア)サイト模写">
+          </div>
+          <div class="work-info">
+            <h3>ストア(インテリア)サイト模写</h3>
+            <p>
+              ストア(インテリア)サイトの模写。複数ページや、JQueryに挑戦した。
+            </p>
+            <div class="work-tags">
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+            <div class="work-links">
+              <a href="https://kana10-dev.github.io/codejump-store2" class="btn-link" target="_blank">View →</a>
+              <a href="https://github.com/kana10-dev/codejump-store2" class="btn-link btn-link--repo" target="_blank">Repo →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card work-card--wip reveal" style="--delay: 0.4s">
+          <div class="work-img work-img--wip">
+            <span class="wip-label">In Development</span>
+          </div>
+          <div class="work-info">
+            <h3>Minecraft Addon <span class="wip-badge">WIP</span></h3>
+            <p>
+              TypeScriptでMinecraft: Bedrock Edition向けのアドオンを開発中。
+            </p>
+            <div class="work-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Minecraft Bedrock API</span>
+            </div>
+            <div class="work-links">
+              <span class="btn-link btn-link--disabled">Coming Soon</span>
             </div>
           </div>
         </div>
